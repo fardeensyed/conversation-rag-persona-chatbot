@@ -1,0 +1,39 @@
+# Python cache/build files
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment/config
+.env
+.env.*
+
+# Generated pipeline artifacts
+data/*.json
+data/*.jsonl
+indexes/*.json
+indexes/*.faiss
+
+# Keep output directories in the repo without committing large generated files.
+!data/.gitkeep
+!indexes/.gitkeep
+
+# Temporary render/runtime folders
+tmp/
+reports/rendered/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
