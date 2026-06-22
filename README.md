@@ -14,6 +14,37 @@ streamlit run app.py
 ```
 
 The system is local-first. It uses a built-in TF-IDF implementation, so it can run even before optional ML packages are installed.
+## Recent Updates
+
+### New Features
+
+* Added conversation parsing pipeline for chronological message processing.
+* Implemented automatic topic change detection using TF-IDF similarity and semantic drift analysis.
+* Added multi-level retrieval system using:
+
+  * Topic checkpoint index
+  * 100-message checkpoint index
+  * Raw conversation chunk index
+* Implemented evidence-backed persona extraction for both participants.
+* Added communication style analysis including:
+
+  * Average message length
+  * Question frequency
+  * Emoji usage
+  * Tone indicators
+* Added Streamlit web interface for interactive querying.
+* Added threshold tuning utility for optimizing topic segmentation.
+* Improved RAG pipeline by combining summaries with raw message evidence.
+* Added separate persona generation for User 1 and User 2 with supporting message references.
+
+### Technical Highlights
+
+* Local-first architecture with no external API dependency.
+* Custom TF-IDF retrieval implementation.
+* Evidence-grounded persona generation.
+* Multi-index retrieval strategy for improved answer quality.
+* Lightweight deployment suitable for personal systems.
+
 
 Install the base demo dependencies with:
 
@@ -98,3 +129,4 @@ Generated persona files:
 - `data/persona_user1.json`
 - `data/persona_user2.json`
 - `data/persona.json`
+
