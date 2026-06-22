@@ -110,7 +110,7 @@ When a question is asked:
 
 This means the chatbot can answer from both high-level summaries and lower-level message evidence.
 
-## How Persona Is Built
+## How Persona Is Built details
 
 Persona extraction is evidence-backed and runs separately for `User 1` and `User 2`.
 
