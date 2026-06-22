@@ -1,4 +1,3 @@
-
 # Optional stronger retrieval stack. The current project runs without these.
 sentence-transformers>=2.6
 faiss-cpu>=1.8
